@@ -4,7 +4,7 @@ import numpy as np
 tf.__version__
 
 inputNodes = 2
-hiddenNodes = 2
+hiddenNodes = 5
 outputNodes = 1
 learningrate = 0.01
 

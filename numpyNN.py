@@ -1,23 +1,27 @@
 import numpy as np
 import math
- 
+
+#define the sizes of the inputs/hidden layer and output
 inputNodes = 2
 hiddenNodes = 2
 outputNodes = 1
 
+#initialise the matracies to hold some data
 inputs = np.random.rand(inputNodes,1)
 hidden = np.random.rand(hiddenNodes,1)
 output = np.random.rand(outputNodes,1)
 expected = np.random.rand(outputNodes,1)
- 
+
+#defined learning rate
 rate = 0.02
- 
+
+#initialise the weight and Biases matracies
 weights_0_1 = np.random.rand(hiddenNodes,inputNodes)
 weights_1_2 = np.random.rand(outputNodes,hiddenNodes)
- 
 bias_hid = np.random.rand(hiddenNodes,1)
 bias_out = np.random.rand(outputNodes,1)
 
+#make an area to hold the 
 error = np.random.rand(outputNodes,1)
 
 def relu(x):
